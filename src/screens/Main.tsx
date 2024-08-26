@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Modal, SafeAreaView, Image, StyleSheet, TouchableWithoutFeedback, ScrollView, View, Button, Alert, Text} from 'react-native';
+import { Modal, SafeAreaView, Image, StyleSheet, TouchableWithoutFeedback, View, Button, Text} from 'react-native';
 import gallery from '../store/Gallery';
 import { observer } from 'mobx-react-lite';
 import { ListComponent } from '../components/ListComponent';

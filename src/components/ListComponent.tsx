@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActivityIndicator, Button, FlatList, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, FlatList, StyleSheet, Text, View } from 'react-native';
 import { ItemComponent } from './ItemComponent';
 import { ImageCard } from '../types';
 import { toJS } from 'mobx';
@@ -88,7 +88,7 @@ export const ListComponent = ({
                          <Text style={listComponentStyle.listEndText}>Конец</Text>
                     </View>;
         };
-console.log(itemsList.length);
+
     return <FlatList
         key={imagesPerRow}
         data={itemsList}

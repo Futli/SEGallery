@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Dimensions, StyleSheet, TouchableOpacity } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import { ImageCard } from '../types';
 const { width: deviceWidth } = Dimensions.get('window');

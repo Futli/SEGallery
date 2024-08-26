@@ -32,7 +32,7 @@ type ListComponentProps = {
     isLoadingMore: boolean,
     isListEnd: boolean,
     onLoadMore: () => void,
-    onItemPress: (item: ImageCard) => void,
+    onItemPress: (image: string) => void,
     renderHeader: React.FC,
     imagesPerRow: number
 }

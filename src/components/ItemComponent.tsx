@@ -7,13 +7,13 @@ const { width: deviceWidth } = Dimensions.get('window');
 
 
 type ItemComponentProps = {
-    onItemPress: (item : ImageCard) => void
+    onItemPress: (image : string) => void
     imagesPerRow: number
     item: ImageCard
 }
 
 export const ItemComponent: React.FC<ItemComponentProps> = React.memo(
-    ({ onItemPress, imagesPerRow, item:{ name, id, image }}) => {
+    ({ onItemPress, imagesPerRow, item:{ image, id }}) => {
 
 const itemComponentStyle = StyleSheet.create({
     image:{
@@ -26,7 +26,7 @@ const itemComponentStyle = StyleSheet.create({
     },
 });
 
-    return <TouchableOpacity onPress={() => onItemPress({name, id, image})} style={itemComponentStyle.card}>
+    return <TouchableOpacity onPress={() => onItemPress(image)} style={itemComponentStyle.card}>
         <FastImage
             key={id}
             resizeMode={FastImage.resizeMode.cover}

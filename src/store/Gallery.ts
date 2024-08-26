@@ -18,7 +18,7 @@ class Gallery {
     page: number = 1;
     items: Array<ImageCard> = [];
     error: string | null = null;
-    activeImage: ImageCard | null = null;
+    activeImage: string | null = null;
     imagesPerRow: number = 2;
 
     constructor(){
@@ -36,8 +36,8 @@ class Gallery {
         this.activeImage = null;
     };
 
-    setActiveImage = (item: ImageCard) => {
-        this.activeImage = item;
+    setActiveImage = (image: string) => {
+        this.activeImage = image;
     };
 
     handleError = (e: Error) => {
